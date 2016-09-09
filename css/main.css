@@ -1,7 +1,9 @@
-#chisapani{height:300px;
-           width:300px;
-           border:1px solid red;
-           }
+#chisapani{height:350px;
+           width:350px;
+           border:1px solid green;
+           /*this is for the spine the image*/
+           -webkit-animation:spin 2s linear infinite;}
+           @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 
 #chock{color:green;
        text-align:center;
@@ -9,3 +11,12 @@
 #myname{color:red;
        text-align:center;
       font-size: 24px;}
+
+.rotate{
+	overflow:hidden;
+	transition-duration: 0.28s;
+	transition-property: transform;
+}
+.rotate:hover{
+	transform:rotate(360deg);
+}
